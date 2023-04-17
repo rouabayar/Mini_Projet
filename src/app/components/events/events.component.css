@@ -1,0 +1,131 @@
+:host{
+  --green-color: #497B79;
+  --body-background: #ffffff;
+  --primary-clr: #f7f7f2;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Open Sans;
+  transition: ease 0.5s;
+  text-decoration: none;
+  color: #161f3e;
+}
+
+body {
+  background-color: var(--primary-clr);
+}
+
+.container {
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+}
+
+.app-container {
+  background-color: var(--primary-clr);
+  border-radius: 10px;
+  padding: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+
+/*event header */
+.container .select-event-header {
+  border-radius: 10px;
+  background-color: var(--green-color);
+  color: white;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.container .select-event-header .img {
+  height: 50px;
+}
+
+/*event card */
+.event-card {
+  width: 100%;
+  background: white;
+  border-radius: 15px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.event-card:hover {
+  box-shadow: #aed3ca 0 0 10px 5px;
+  transform: scale(1.1);
+}
+
+.left {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 15px;
+}
+
+.date {
+  width: 200px;
+  height: 80px;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 2px;
+
+  background: #eef8ec;
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.event-about {
+  font-size: 12px;
+  color: #4b4b4b;
+  margin-top: 5px;
+}
+
+.Select-from-list {
+  width: 120px;
+  display: inline-block;
+  background: #497B79;
+  color: white;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 5px;
+  border-radius: 6px;
+  margin: 0 10px;
+}
+
+.Select-from-list:hover {
+  box-shadow: #cfd5e0 0 0 10px 5px;
+  transform: scale(1.1);
+}
+
+.Select-from-list:hover .ion-icon {
+  transform: rotate(360deg);
+}
+
+.ion-icon {
+  color: white;
+  font-size: 20px;
+  margin-right: 10px;
+}

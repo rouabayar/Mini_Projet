@@ -1,0 +1,45 @@
+<div class="container">
+  <div class="row add-event-header">
+    <div class="col-5">
+      <img class="img-fluid mx-auto d-block img" src="assets/add.png" alt="add logo" width="50">
+    </div>
+    <div class="col-7"><p class="fw-lighter text-white text">ADD EVENT </p></div>
+  </div>
+  <br><br>
+  <form action="" method="POST">
+
+    <div class="row add-event-body">
+      <div class="col-5"><label for="title" class="form-label"> Title </label></div>
+      <div class="col"><input id="title" type="text" class="form-control" placeholder="Enter the title of the event"></div>
+    </div>
+    <br>
+    <div class="row add-event-body">
+      <div class="col-5"><label for="dt" class="form-label"> Date </label></div>
+      <div class="col-3"><input id="dt" type="date" class="form-control" placeholder="Pick a date"></div>
+    </div>
+    <br>
+    <div class="row add-event-body">
+      <div class="col-5"><label for="place" class="form-label"> Place </label></div>
+      <div class="col"><input id="place" type="text" class="form-control" placeholder="Enter the place of the event"></div>
+    </div>
+    <br>
+    <div class="row add-event-body">
+      <div class="col-5"><label for="about" class="form-label">About</label></div>
+      <div class="col"><textarea id="about" name="about" rows="5" class="form-control"></textarea></div>
+    </div>
+    <br><br><br>
+    <div class="row add-event-footer ">
+      <div class="col"></div>
+        <div class="col-md-5 text-right">
+          <button type="button" class="btn mt-3 add-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            <!-- <i class="fa-solid fa-pen-to-square ion-icon"></i> Modify -->
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar-plus ion-icon" viewBox="0 0 16 16">
+              <path d="M8 7a.5.5 0 0 1 .5.5V9H10a.5.5 0 0 1 0 1H8.5v1.5a.5.5 0 0 1-1 0V10H6a.5.5 0 0 1 0-1h1.5V7.5A.5.5 0 0 1 8 7z"/>
+              <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
+            </svg>ADD
+          </button>
+        <button type="reset" class="btn mt-3 reset-btn" data-dismiss="modal">RESET</button>
+        </div>
+    </div>
+  </form>
+</div>

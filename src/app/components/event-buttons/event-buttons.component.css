@@ -1,0 +1,47 @@
+:host {
+  --background-button: #497B79;
+  --color-links: #f7f7f2;
+  --color-link-2: #283739;
+  --body-background: #f7f7f2;
+  --box-shadow: rgba(80, 155, 144, 0.8);
+}
+
+body {
+  background: var(--body-background);
+}
+
+.container {
+  padding: 80px 0;
+}
+
+.card:hover {
+  box-shadow: 3px 3px 30px 7px var(--box-shadow);
+  transform: translateX(10px);
+}
+
+.card .stretched-link {
+  color: var(--color-links);
+  padding: 20px 0;
+  text-align: center;
+}
+
+.card .stretched-link:hover {
+  color: var(--color-link-2);
+}
+
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--background-button);
+  border-radius: 15px;
+}
+
+.card .imgs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
